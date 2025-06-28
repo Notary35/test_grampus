@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Wix Madefor Text", sans-serif;
+    font-size: 18px;
+    color: black;
+    background-color: #FFFBF9;
+    line-height: 1.5;
+}
+
+h1{
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 80px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
