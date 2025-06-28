@@ -1,28 +1,126 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    border: 0;
+    /* box-sizing: border-box; */
 }
 
 body{
     font-family: "Wix Madefor Text", sans-serif;
     font-size: 18px;
     color: black;
-    background-color: #FFFBF9;
     line-height: 1.5;
 }
 
 h1{
     font-family: "Alumni Sans", sans-serif;
     font-size: 80px;
-    
 }
 
 a{
     text-decoration: none;
     color: black;
+    line-height: 120%;
 }
 
 ul{
     list-style: none;
+}
+
+header{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: #FFFBF9;
+}
+
+.content{
+    max-width: 1170px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .content h1{
+    font-size: 18px;
+    font-weight: 800;
+    font-family: "Wix Madefor Text", sans-serif;
+}
+
+nav ul{
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li a{
+    color: #556877;
+    font-size: 16px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.phone{
+    font-family: "Alumni Sans", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.phone-link{
+    color: #A3887B;
+    font-size: 14px;
+}
+
+.text-part{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.decorated-text{
+    height: 80px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.decor-element{
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.decor-text{
+    position: relative;
+    font-family: "Alumni Sans", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 130%;
+    z-index: 2;
+    left: 50px;
+}
+.banner-text{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: flex-start;
+}
+.banner-text h1{
+    line-height: 90%;
+    font-size: 100px;
+}
+
+.btn{
+    background-color: #A3887B;
+    padding: 20px 40px;
+    color: white;
+    font-family: "Wix Madefor Text", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
 }
