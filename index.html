@@ -3,32 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Клубный дом «Южная жемчужина» — комфортное жильё бизнес-класса в центре Курска. Планировки, инфраструктура, преимущества.">
+    <title>Клубный дом «Южная жемчужина»</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="content">
-            <h1 class="logo"><a href="/">Клубный дом<br>«Южная жемчужина»</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="#">О доме</a></li>
-                    <li><a href="#">Планировки</a></li>
-                    <li><a href="#">Инфраструктура</a></li>
-                    <li><a href="#">Отделка</a></li>
-                    <li><a href="#">Оплата</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-            </nav>
-            <div class="contact">
-                <a class="phone" href="tel:8 964 198-46-73">8 964 198-46-73</a>
-                <p class="phone-link">Связаться со мной</p>
+    <header class="head">
+        <div class="fix-menu">
+            <div class="content">
+                <h1 class="logo"><a href="/">Клубный дом<br>«Южная жемчужина»</a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">О доме</a></li>
+                        <li><a href="#">Планировки</a></li>
+                        <li><a href="#">Инфраструктура</a></li>
+                        <li><a href="#">Отделка</a></li>
+                        <li><a href="#">Оплата</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="contact">
+                    <a class="phone" href="tel:8 964 198-46-73">8 964 198-46-73</a>
+                    <p class="phone-link">Связаться со мной</p>
+                </div>
             </div>
         </div>
     </header>
@@ -37,27 +37,27 @@
             <div class="text-part">
                 <div class="decorated-text">
                     <div class="decor-text">
-                        <p>Клубный дом<br>«Южная жемчужина»</p>
+                        <span class="type-text">Клубный дом<br>«Южная жемчужина»</span>
                     </div>
                     <div class="decor-element">
-                        <img src="img/decoration.svg">
+                        <img src="img/decoration.svg" alt="" aria-hidden="true">
                     </div>
                 </div>
                 <div class="banner-text">
-                    <h1>Комфортное<br>жильё бизнес-<br>класса</h1>
+                    <h2>Комфортное<br>жильё бизнес-<br>класса</h2>
                     <button class="btn">Смотреть планировку</button>
                 </div>
             </div>
             <div class="image-part">
-                <section class="image-section">
-                    <!-- <img src="img/house.jpg" alt=""> -->
-                </section>
                 <section class="link-section">
-                    <div>
-                        <img src="img/arrow_right.svg" alt="">
-                        <p>Смотреть инфраструктуру</p>
+                    <div class="infrastructure-link">
+                        <span class="link-text">Смотреть инфраструктуру</span>
+                        <img src="img/arrow_right.svg" alt="" aria-hidden="true">
                     </div>
                     <div class="decor-line"></div>
+                </section>
+                <section class="image-section">
+                    <div class="image"></div>
                 </section>
             </div>
         </div>
@@ -65,13 +65,13 @@
     <div class="about-house">
         <div class="content">
             <div class="house-row">
-                <img src="img/house2.jpg" alt="">
+                <img src="img/house2.jpg" alt="Фасад дома">
                 <div class="text-col">
-                    <h1>О доме</h1>
-                        <div>
-                            <img src="img/gps.svg" alt="">
-                            <a href="#">г. Курск, ул. Южный переулок, д. 14</a>
-                        </div>
+                    <h2>О доме</h2>
+                    <div class="address">
+                        <img src="img/gps.svg" alt="" aria-hidden="true">
+                        <a href="#">г. Курск, ул. Южный переулок, д. 14</a>
+                    </div>
                     <p>Этo тиxое местo в цeнтрe гoрoдa. Запроектирован дом одно подъездным, монолитно-кирпичным, 8-ми этажным с просторным лифтом грузоподъемностью 1 тн. На первом этаже расположено коммерческое помещение</p>
                     <p>В доме спроектирован подземный паркинг с расчетом два машиноместа на квартиру, со спускающимся до паркинга лифтом с вашего этажа</p>
                     <p>В домe всeгo 14 квартир, тем самым coздаeтся эффект отcутствия «мурaвeйника»</p>
@@ -79,152 +79,175 @@
             </div>
             <div class="cards-row">
                 <div class="card-type">
-                    <p>Сроки сдачи</p>
-                    <p>2 квартал</p>
-                    <p>2025</p>
+                    <h3 class="title">Сроки сдачи</h3>
+                    <span class="num-q">2 квартал</span>
+                    <span class="num">2025</span>
+                    <span class="corner-bl"></span>
+                    <span class="corner-br"></span>
                 </div>
                 <div class="card-type">
-                    <p>Этажность</p>
-                    <p>8</p>
+                    <h3 class="title">Этажность</h3>
+                    <span class="num">8</span>
+                    <span class="corner-bl"></span>
+                    <span class="corner-br"></span>
                 </div>
                 <div class="card-type">
-                    <p>Квартир на этаже</p>
-                    <p>2</p>
+                    <h3 class="title">Квартир на этаже</h3>
+                    <span class="num">2</span>
+                    <span class="corner-bl"></span>
+                    <span class="corner-br"></span>
                 </div>
                 <div class="card-type">
-                    <p>Количество квартир</p>
-                    <p>14</p>
+                    <h3 class="title">Количество квартир</h3>
+                    <span class="num">14</span>
+                    <span class="corner-bl"></span>
+                    <span class="corner-br"></span>
                 </div>
             </div>
         </div>
     </div>
-    <div>
+    <div class="home-types">
         <div class="content">
-            <div class="text-part">
-                <h1>2 типа квартир площадью 130 м²</h1>
+            <div class="text-part2">
+                <h2>2 типа квартир площадью 130 м²</h2>
                 <div class="varian-button">
                     <div class="group">
                         <div class="dec-num">
                             <div class="rectangle"></div>
-                            <p>01</p>
+                            <span class="type-num">01</span>
                         </div>
-                        <p>1 тип. Слева от лифта</p>
+                        <span class="type-text">1 тип. Слева от лифта</span>
                     </div>
                     <div class="group">
                         <div class="dec-num">
                             <div class="rectangle"></div>
-                            <p>01</p>
+                            <span class="type-num">02</span>
                         </div>
-                        <p>2 тип. Справа от лифта</p>
+                        <span class="type-text">2 тип. Справа от лифта</span>
                     </div>
                 </div>
                 <p>Функционально квартиры поделены на две зоны со своими санузлами. Имеют выходы на остекленные витражные лоджии</p>
                 <div class="info-blocks">
                     <div class="block">
-                        <p>Зона активного блока</p>
-                        <p>33 м²</p>
+                        <h3 class="title">Зона активного блока</h3>
+                        <span class="type-num">33 м²</span>
                         <p>Совмещенная кухня с гостиной</p>
                     </div>
                     <div class="block">
-                        <p>Зона пасивного блока</p>
-                        <p>65 м²</p>
+                        <h3 class="title">Зона пасивного блока</h3>
+                        <span class="type-num">65 м²</span>
                         <p>3 комнаты для отдыха</p>
                     </div>
                 </div>
             </div>
             <div class="blueprint-part">
-                <img src="img/sun-up.svg" alt="">
+                <img src="img/sun-up.svg" alt="" aria-hidden="true">
                 <div class="image-place">
                     <div class="blueprint-image">
-                        <img src="img/hider-left.png" alt="">
-                        <img src="img/hider-right.png" alt="">
-                        <img src="img/blue-print-all.png" alt="">
+                        <img src="img/hider-left.png" class="plan-img" alt="Планировка 1">
+                        <img src="img/hider-right.png" class="plan-img" alt="Планировка 2">
+                        <img src="img/blue-print-all.png" class="plan-img" alt="Общая планировка">
                     </div>
                     <div class="tips">
-                        <img src="img/sign.svg" alt="">
+                        <img src="img/sign.svg" alt="" aria-hidden="true">
                         <div>
                             <p>Коридор</p>
                             <p>9,38 м²</p>
                         </div>
                     </div>
                     <div class="tips">
-                        <img src="img/sign.svg" alt="">
+                        <img src="img/sign.svg" alt="" aria-hidden="true">
                         <div>
                             <p>Лифтовый холл (Пожаробезопасная зона)</p>
                             <p>4,74 м²</p>
                         </div>
                     </div>
                     <div class="tips">
-                        <img src="img/sign.svg" alt="">
+                        <img src="img/sign.svg" alt="" aria-hidden="true">
                         <div>
                             <p>Лестничная клетка</p>
                             <p>13,9 м²</p>
                         </div>
                     </div>
                 </div>
-                <img src="img/sun-down.svg" alt="">
+                <img src="img/sun-down.svg" alt="" aria-hidden="true">
             </div>
         </div>
     </div>
     <div class="features">
         <div class="content">
             <div class="row-1">
-                <h1>В квартирах предусмотрено</h1>
+                <h2>В квартирах предусмотрено</h2>
                 <div class="cards-row">
-                    <div class="card">
+                    <div class="card-type">
                         <div class="text-place">
-                            <p>Индивидуальное отопление</p>
+                            <h3 class="title">Индивидуальное отопление</h3>
                             <p>Индивидуальное отопление</p>
                         </div>
-                        <img src="img/heating.svg" alt="">
+                        <img src="img/heating.svg" alt="Индивидуальное отопление" aria-hidden="true">
+                        <span class="corner-bl"></span>
+                        <span class="corner-br"></span>
                     </div>
-                    <div class="card">
+                    <div class="card-type">
                         <div class="text-place">
-                            <p>Остекление</p>
+                            <h3 class="title">Остекление</h3>
                             <p>Просторные витражные остекления до пола</p>
                         </div>
-                        <img src="img/glass.svg" alt="">
+                        <img src="img/glass.svg" alt="Остекление" aria-hidden="true">
+                        <span class="corner-bl"></span>
+                        <span class="corner-br"></span>
                     </div>
-                    <div class="card">
+                    <div class="card-type">
                         <div class="text-place">
-                            <p>«Спрятанные» коммуникации</p>
+                            <h3 class="title">«Спрятанные» коммуникации</h3>
                             <p>Трубы отопления находятся в полу</p>
                         </div>
-                        <img src="img/hidden.svg" alt="">
+                        <img src="img/hidden.svg" alt="Спрятанные коммуникации" aria-hidden="true">
+                        <span class="corner-bl"></span>
+                        <span class="corner-br"></span>
                     </div>
-                    <div class="card">
+                    <div class="card-type">
                         <div class="text-place">
-                            <p>Радиаторы отопления</p>
+                            <h3 class="title">Радиаторы отопления</h3>
                             <p>Расположены возле витражных окон в пространстве пола</p>
                         </div>
-                        <img src="img/radiator.svg" alt="">
+                        <img src="img/radiator.svg" alt="Радиаторы отопления" aria-hidden="true">
+                        <span class="corner-bl"></span>
+                        <span class="corner-br"></span>
                     </div>
-                    <div class="card">
+                    <div class="card-type">
                         <div class="text-place">
-                            <p>Кондиционер</p>
+                            <h3 class="title">Кондиционер</h3>
                             <p>Запроектирована подготовка под установку</p>
-                        <img src="img/conditioning.svg" alt="">
                         </div>
+                        <img src="img/conditioning.svg" alt="Кондиционер" aria-hidden="true">
+                        <span class="corner-bl"></span>
+                        <span class="corner-br"></span>
                     </div>
-                    <div class="card">
+                    <div class="card-type">
                         <div class="text-place">
-                            <p>Система пожарного оповещения</p>
+                            <h3 class="title">Система пожарного оповещения</h3>
                             <p>Автоматизированная система. Приходит на пульт консьержу</p>
                         </div>
-                        <img src="img/firefighting.svg" alt="">
+                        <img src="img/firefighting.svg" alt="Пожарное оповещение" aria-hidden="true">
+                        <span class="corner-bl"></span>
+                        <span class="corner-br"></span>
                     </div>
-                    <div class="card">
+                    <div class="card-type">
                         <div class="text-place">
-                            <p>Видео наблюдение</p>
+                            <h3 class="title">Видеонаблюдение</h3>
                             <p>Придомовой территории и мест общего пользования</p>
                         </div>
-                        <img src="img/cctv.svg" alt="">
+                        <img src="img/cctv.svg" alt="Видеонаблюдение" aria-hidden="true">
+                        <span class="corner-bl"></span>
+                        <span class="corner-br"></span>
                     </div>
-                    <div class="card">
-                        <div class="text-place">
-                            <a class="phone" href="tel:8 964 198-46-73">8 964 198-46-73</a>
-                            <p>Обращайтесь по всем вопросам</p>
-                        </div>
+                    <div class="card-type card-type--contact">
+                        <h3 class="title">Связаться по вопросам</h3>
+                        <a class="num-q" href="tel:8 964 198-46-73">8 964 198-46-73</a>
+                        <p>Обращайтесь по всем вопросам</p>
+                        <span class="corner-bl"></span>
+                        <span class="corner-br"></span>
                     </div>
                 </div>
             </div>

@@ -2,19 +2,22 @@
     margin: 0;
     padding: 0;
     border: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 body{
     font-family: "Wix Madefor Text", sans-serif;
     font-size: 18px;
-    color: black;
-    line-height: 1.5;
+    font-weight: 400;
+    color: #556877;
+    line-height: 140%;
 }
 
 h1{
     font-family: "Alumni Sans", sans-serif;
     font-size: 80px;
+    color: #2D3047;
+    line-height: 100%;
 }
 
 a{
@@ -30,8 +33,21 @@ ul{
 header{
     height: 80px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+}
+
+.head, .slider, .home-types{
     background-color: #FFFBF9;
+}
+
+.fix-menu{
+    display: flex;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    background-color: #FFFBF9;
+    z-index: 1000;
+    border-bottom: #A3887B 1px solid;
 }
 
 .content{
@@ -77,7 +93,7 @@ nav ul li a{
 .text-part{
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 40px;
 }
 
 .decorated-text{
@@ -85,6 +101,7 @@ nav ul li a{
     position: relative;
     display: flex;
     align-items: center;
+    color: #2D3047;
     /* justify-content: center; */
 }
 
@@ -98,13 +115,18 @@ nav ul li a{
 
 .decor-text{
     position: relative;
+    z-index: 2;
+    left: 50px;
+}
+
+.type-text{
     font-family: "Alumni Sans", sans-serif;
     font-weight: 700;
     font-size: 30px;
     line-height: 130%;
-    z-index: 2;
-    left: 50px;
+    color: #2D3047;
 }
+
 .banner-text{
     display: flex;
     flex-direction: column;
@@ -123,4 +145,311 @@ nav ul li a{
     font-family: "Wix Madefor Text", sans-serif;
     font-size: 16px;
     font-weight: 500;
+}
+
+
+
+.image-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 120px;
+}
+
+.link-section{
+    width: 620px;
+    margin-right: 40px;
+    height: 495px;
+    background-color: #ede7e5;
+    position: absolute;
+    transform: translateY(120px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 40px;
+}
+
+.infrastructure-link{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.link-text{
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    color: #A3887B;
+}
+.text-col
+.decor-line{
+    width: 100%;
+    height: 1px;
+    background: #a3887b;
+}
+
+.image-section{
+    width: 610px;
+    padding : 25px;
+    background-color: #FFF;
+    position: relative;
+    border: #fefeff 1px solid;
+}
+
+.image{
+    width: 100%;
+    height: 690px;
+    background: url(img/house.jpg);
+}
+.about-house .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+.about-house, .home-types, .features{
+    padding: 80px 0;
+}
+
+.house-row{
+    display: flex;
+    gap: 100px;
+}
+
+.text-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.address{
+    font-family: "Wix Madefor Text", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.address a{
+    color: #A3887B;
+}
+
+.cards-row{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.card-type {
+    position: relative;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    border: none;
+}
+
+.card-type::before,
+.card-type::after {
+    content: "";
+    position: absolute;
+    width: 40px;  /* длина угла */
+    height: 40px; /* длина угла */
+    border: 1px solid #A3887B;
+}
+
+.card-type::before {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+}
+
+.card-type::after {
+    top: 0;
+    right: 0;
+    border-left: none;
+    border-bottom: none;
+}
+
+.card-type .corner-bl,
+.card-type .corner-br {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #A3887B;
+}
+
+.card-type .corner-bl {
+    left: 0;
+    bottom: 0;
+    border-right: none;
+    border-top: none;
+}
+
+.card-type .corner-br {
+    right: 0;
+    bottom: 0;
+    border-left: none;
+    border-top: none;
+}
+
+
+.card-type:hover::before,
+.card-type:hover::after,
+.card-type:hover .corner-bl,
+.card-type:hover .corner-br {
+    width: 150px;
+    height: 150px;
+}
+
+.card-type::before,
+.card-type::after,
+.card-type .corner-bl,
+.card-type .corner-br {
+    transition: width 0.3s, height 0.3s;
+}
+
+.num{
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 80px;
+    line-height: 100%;
+    font-weight: 700;
+    color: #A3887B;
+
+}
+
+.num-q{
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 30px;
+    line-height: 130%;
+    font-weight: 700;
+    color: #A3887B;
+}
+
+.text-part2{
+    display: flex;
+    gap: 40px;
+    margin-right: 130px;
+    flex-direction: column;
+}
+
+.varian-button{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.group{
+    display: flex;
+    gap: 20px;
+    border: #A3887B 1px solid;
+    align-items: center;
+    padding: 30px;
+}
+
+.type-num{
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 46px;
+    line-height: 110%;
+    font-weight: 700;
+    color: #A3887B;
+}
+
+.info-blocks{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title{
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 24px;
+    line-height: 130%;
+    font-weight: 700;
+    color: #2D3047;
+}
+
+.blueprint-part, .blueprint-image, .image-place{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.blueprint-image{
+    min-width: 570px;
+    min-height: 490px;
+}
+
+
+
+.plan-img{
+    position: absolute;
+    z-index: 0;
+
+}
+
+.plan-img:nth-child(1){
+    transform: translateX(-40%);
+    z-index: 1;
+}
+
+.plan-img:nth-child(2){
+    z-index: 2;
+    transform: translateX(60%);
+}
+
+.tips{
+    position: absolute;
+    z-index: 10;
+}
+
+.tips:nth-child(2){
+    transform: translateY(293px);
+    z-index: 3;
+}
+
+.tips:nth-child(3){
+    transform: translateX(160px) translateY(352px);
+    z-index: 3;
+}
+
+.tips:nth-child(4){
+    transform: translateX(-24px) translateY(446px);
+    z-index: 3;
+}
+
+.features .card-type{
+    align-items: flex-end;
+    height: 270px;
+    padding: 30px;
+}
+
+.row-1{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+
+.card-type:nth-child(8){
+    align-items: flex-start;
 }
