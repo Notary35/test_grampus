@@ -15,6 +15,13 @@ body{
 
 h1{
     font-family: "Alumni Sans", sans-serif;
+    font-size: 100px;
+    color: #2D3047;
+    line-height: 90%;
+}
+
+h2{
+    font-family: "Alumni Sans", sans-serif;
     font-size: 80px;
     color: #2D3047;
     line-height: 100%;
@@ -93,7 +100,7 @@ nav ul li a{
 .text-part{
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 80px;
 }
 
 .decorated-text{
@@ -112,6 +119,8 @@ nav ul li a{
     left: 0;
     z-index: 1;
 }
+
+
 
 .decor-text{
     position: relative;
@@ -132,10 +141,6 @@ nav ul li a{
     flex-direction: column;
     gap: 60px;
     align-items: flex-start;
-}
-.banner-text h1{
-    line-height: 90%;
-    font-size: 100px;
 }
 
 .btn{
@@ -185,7 +190,7 @@ nav ul li a{
     line-height: 120%;
     color: #A3887B;
 }
-.text-col
+
 .decor-line{
     width: 100%;
     height: 1px;
@@ -247,12 +252,12 @@ nav ul li a{
 
 .card-type {
     position: relative;
+    min-height: 270px;
     height: 100%;
     padding: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
     justify-content: space-between;
     border: none;
 }
@@ -308,8 +313,8 @@ nav ul li a{
 .card-type:hover::after,
 .card-type:hover .corner-bl,
 .card-type:hover .corner-br {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 200px;
 }
 
 .card-type::before,
@@ -438,7 +443,6 @@ nav ul li a{
 
 .features .card-type{
     align-items: flex-end;
-    height: 270px;
     padding: 30px;
 }
 
